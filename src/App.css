@@ -37,6 +37,18 @@ body {
   background: var(--light_grayish_cyan);
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+
+
 input[type="text"] {
   height: 4rem;
   border: none;
@@ -145,7 +157,9 @@ control the grid */
   gap: 1rem;
 }
 
-.tip_buttons button {
+.tip_buttons button,
+.tip_buttons input {
+  max-width: 11.2rem;
   background: var(--very_dark_cyan);
   color: var(--white);
   font-weight: 700;
