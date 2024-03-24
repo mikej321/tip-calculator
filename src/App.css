@@ -208,6 +208,12 @@ control the grid */
   box-shadow: none;
 }
 
+.tip_buttons button:focus {
+  background: var(--strong_cyan);
+  color: var(--very_dark_cyan);
+  box-shadow: none;
+}
+
 .tip_buttons .button_custom {
   background: var(--very_light_grayish_cyan);
   box-shadow: none;
